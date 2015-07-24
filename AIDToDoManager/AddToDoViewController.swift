@@ -8,21 +8,29 @@
 
 import UIKit
 
-class AddToDoViewController: UIViewController {
+class AddToDoViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleTextField: UITextField!
-    
     @IBOutlet weak var deadLineTextField: UITextField!
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .DateAndTime
+        datePicker.addTarget(self, action: Selector("updateDeadLineTextField:"), forControlEvents: .ValueChanged)
+        deadLineTextField.inputView = datePicker
     }
-
+    func updateDeadLineTextField(sender: UIDatePicker){
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        deadLineTextField.text = String(_cocoaString: sender.date)
+        
+    }
+    
+    
+    
+  
     @IBAction func addButtonTouchUpInside(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -30,5 +38,4 @@ class AddToDoViewController: UIViewController {
     @IBAction func cancelButtonTouchUpInside(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
 }
