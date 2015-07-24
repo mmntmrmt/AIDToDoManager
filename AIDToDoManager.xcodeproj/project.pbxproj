@@ -15,6 +15,7 @@
 		E5AF3D661B6235D200810DF0 /* AIDToDoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AF3D651B6235D200810DF0 /* AIDToDoManagerTests.swift */; };
 		E5AF3D731B6239D700810DF0 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AF3D721B6239D700810DF0 /* ToDoListViewController.swift */; };
 		E5AF3D761B623DF600810DF0 /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AF3D751B623DF600810DF0 /* ToDoListTableViewCell.swift */; };
+		E5AF3D781B623FC900810DF0 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AF3D771B623FC900810DF0 /* AddToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		E5AF3D651B6235D200810DF0 /* AIDToDoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDToDoManagerTests.swift; sourceTree = "<group>"; };
 		E5AF3D721B6239D700810DF0 /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		E5AF3D751B623DF600810DF0 /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewCell.swift; sourceTree = "<group>"; };
+		E5AF3D771B623FC900810DF0 /* AddToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E5AF3D721B6239D700810DF0 /* ToDoListViewController.swift */,
+				E5AF3D771B623FC900810DF0 /* AddToDoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF3D781B623FC900810DF0 /* AddToDoViewController.swift in Sources */,
 				E5AF3D731B6239D700810DF0 /* ToDoListViewController.swift in Sources */,
 				E5AF3D761B623DF600810DF0 /* ToDoListTableViewCell.swift in Sources */,
 				E5AF3D501B6235D200810DF0 /* AppDelegate.swift in Sources */,

@@ -56,11 +56,35 @@
                             <constraint firstItem="hWQ-5P-6Ys" firstAttribute="leading" secondItem="9jV-Hx-jbb" secondAttribute="leading" id="lyb-9D-5zq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="58R-0k-i7K"/>
+                    <navigationItem key="navigationItem" id="58R-0k-i7K">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="0fv-bA-oJE">
+                            <connections>
+                                <segue destination="zJM-D7-WoI" kind="modal" id="xzk-hi-0ea"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCn-Ul-KgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="346"/>
+            <point key="canvasLocation" x="644" y="346"/>
+        </scene>
+        <!--Add To Do View Controller-->
+        <scene sceneID="l9M-gn-5LS">
+            <objects>
+                <viewController id="zJM-D7-WoI" customClass="AddToDoViewController" customModule="AIDToDoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZH0-2S-xX8"/>
+                        <viewControllerLayoutGuide type="bottom" id="qTt-ly-NTN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Nj-I7-QeA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzg-Lb-0vS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="346"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6To-mg-xGB">
